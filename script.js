@@ -1,7 +1,7 @@
 function embedVideo() {
 	var videoUrl = document.getElementById("videoUrl").value;
 	var videoId = extractVideoId(videoUrl);
-	var watchUrl = "watch.html?v=" + videoId;
+	var watchUrl = "watch.html/embed/" + videoId;
 	window.location.href = watchUrl;
 }
 
