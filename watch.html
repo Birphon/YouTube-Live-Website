@@ -4,16 +4,14 @@
 <head>
     <title>Watch Video</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
 </head>
 
 <body>
     <button id="overlayButton" onClick="newStream()">New Stream</button>
-    <iframe id="videoFrame" is="x-frame-bypass" src="https://www.youtube.com/embed/{{videoId}}" frameborder="0"
+    <iframe id="videoFrame" src="https://www.youtube.com/embed/{{videoId}}" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <iframe id="chatFrame" is="x-frame-bypass" src="https://www.youtube.com/live_chat?is_popout=1&v={{videoId}}"
-        frameborder="0"
+    <iframe id="chatFrame" src="https://www.youtube.com/live_chat?is_popout=1&v={{videoId}}" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     <script src="script.js"></script>
