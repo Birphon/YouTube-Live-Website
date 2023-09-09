@@ -2,21 +2,20 @@
 <html>
 
 <head>
-    <title>Watch YouTube Video</title>
+    <title>Watch Video</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <h1>Watch YouTube Video</h1>
-
-    <!-- Video Player iframe -->
-    <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/" frameborder="0"
+    <button id="overlayButton" onClick="newStream()">New Stream</button>
+    <iframe id="videoFrame" src="https://www.youtube.com/embed/{{videoId}}" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-
-    <!-- Live Chat iframe -->
-    <iframe id="liveChatFrame" width="560" height="315" src="https://www.youtube.com/" frameborder="0"
-        allowfullscreen></iframe>
-
-    <script src="script.js" defer></script>
+    <iframe id="chatFrame" src="https://www.youtube.com/live_chat?is_popout=1&v={{videoId}}" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen</iframe>
+        <script src="script.js"></script>
 </body>
+
 
 </html>

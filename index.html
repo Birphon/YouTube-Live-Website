@@ -2,17 +2,18 @@
 <html>
 
 <head>
-    <title>YouTube Link Parser</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Embed</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <h1>YouTube Link Parser</h1>
-    <form id="youtubeLinkForm">
-        <label for="youtubeLink">Enter YouTube Link:</label>
-        <input type="text" id="youtubeLink" name="youtubeLink" placeholder="https://www.youtube.com/watch?v=" required>
-        <button type="button" id="watchButton">Watch</button>
-    </form>
+    <section id="streamSelector">
+        <h1>YouTube Video Embed</h1>
+        <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=">
+        <button id="embedVideo" onclick="embedVideo()">Watch</button>
+    </section>
     <script src="script.js"></script>
 </body>
 
