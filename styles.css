@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* Apply dark theme styles */
+body {
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Set the container to full screen height */
+html,
+body,
+#videoContainer,
+#chatContainer {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set the player width to 86.4% and chat width to 13.6% */
+#videoFrame {
+    width: 86.4%;
+    height: 100%;
+}
+
+#liveChatFrame {
+    width: 13.6%;
+    height: 100%;
+    border: none;
+    /* Remove iframe border */
+}
